@@ -2,6 +2,12 @@
 
 Este repositorio centraliza y unifica las entregas prácticas de la materia **Laboratorio de Desarrollo de Software (LDSW)** en Flutter (UDG Virtual):
 
+- **Actividad 3.7: Integración de Base de Datos con Firebase Cloud Firestore** (`FirebaseFirestore` & Formulario de Películas)
+  - Integración de base de datos NoSQL en la nube con Google Firebase Cloud Firestore (`cloud_firestore`, `firebase_core`).
+  - Creación y gestión de colecciones documentales (`movies`) para persistencia en la nube y consulta en tiempo real.
+  - Implementación de formulario móvil interactivo para registro de películas (título, género, año, duración, sinopsis, póster y calificación).
+  - Persistencia de datos en la nube mediante operaciones asíncronas con Firebase, garantizando validación y control de errores.
+
 - **Actividad 3.6: Peticiones HTTP y Consumo de API en Flutter** (`MovieService` & `FutureBuilder`)
   - Implementación de peticiones asíncronas HTTP (GET) para consumir datos en tiempo real mediante el paquete `http`.
   - Servicio `MovieService` con manejo asíncrono (`async`/`await`), deserialización de JSON a modelos estructurados (`Movie`), y control de códigos de estado HTTP (200 OK y manejo de excepciones/errores).
@@ -30,7 +36,7 @@ Este repositorio centraliza y unifica las entregas prácticas de la materia **La
 
 ```
 lib/
-└── main.dart   # Implementación unificada de HomeScreen (3.5), MovieCatalogScreen (3.4) y MovieService / peticiones HTTP (3.6)
+└── main.dart   # Implementación unificada de HomeScreen (3.5), MovieCatalogScreen (3.4), MovieService / peticiones HTTP (3.6) y persistencia Firebase Firestore (3.7)
 ```
 
 ## Ejecución
