@@ -2,6 +2,14 @@
 
 Este repositorio centraliza y unifica las entregas prácticas de la materia **Laboratorio de Desarrollo de Software (LDSW)** en Flutter (UDG Virtual):
 
+- **Actividad 3.6: Peticiones HTTP y Consumo de API en Flutter** (`MovieService` & `FutureBuilder`)
+  - Implementación de peticiones asíncronas HTTP (GET) para consumir datos en tiempo real mediante el paquete `http`.
+  - Servicio `MovieService` con manejo asíncrono (`async`/`await`), deserialización de JSON a modelos estructurados (`Movie`), y control de códigos de estado HTTP (200 OK y manejo de excepciones/errores).
+  - Integración en la interfaz de usuario mediante `FutureBuilder`, gestionando los tres estados clave del ciclo de vida asíncrono:
+    - **Cargando:** Indicador de progreso visual (`CircularProgressIndicator`).
+    - **Éxito:** Renderizado dinámico del catálogo con datos reales obtenidos del servidor.
+    - **Error:** Retroalimentación visual de fallos en la conexión o en la petición de red.
+
 - **Actividad 3.5: Home Screen en Flutter** (`HomeScreen`)
   - Pantalla inicial de bienvenida (`'/'`).
   - Imagen de fondo (`Image.network` con diseño adaptativo y fallback de gradiente).
@@ -22,7 +30,7 @@ Este repositorio centraliza y unifica las entregas prácticas de la materia **La
 
 ```
 lib/
-└── main.dart   # Implementación unificada de HomeScreen (3.5) y MovieCatalogScreen (3.4)
+└── main.dart   # Implementación unificada de HomeScreen (3.5), MovieCatalogScreen (3.4) y MovieService / peticiones HTTP (3.6)
 ```
 
 ## Ejecución
